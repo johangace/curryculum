@@ -36,6 +36,7 @@ namespace Subject.Controllers
         public IActionResult Create(LearningSubject subject)
         {
             // This code will save the pizza and return a resultPizzaService.Add(pizza);
+                LearningSubjectService.Add(subject);
             return CreatedAtAction(nameof(Create), new { id = subject.Id }, subject);
 
         }
